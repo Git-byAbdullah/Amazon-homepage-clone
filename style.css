@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    border: border-box;
+}
+body{
+    background-color: rgb(161, 60, 255);
+}
+/* ---------------nav-bar------------------ */
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* ..............nav-1st Element............... */
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    padding:10px 0px;
+    border: 1.5px solid white;
+}
+/* ..............nav-2nd Element............... */
+.add-1st{
+    color: #CCCCCC;
+    font-size: 0.85rem;
+    margin-left: 25px;
+
+}
+.add-2nd{
+    color: #FFFFFF;
+    font-size:1rem;
+    margin-left: 3px;
+    text-transform: bold;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/* .nav-address border{
+    padding: 10px 5px;
+} */
+/* ..............nav-3rd Element............... */
+.nav-search{ 
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 750px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon{
+    width:45px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.nav-search:hover{
+    border:2px solid orange;
+} 
+/* ..............nav-4th Element............... */
+.nav-lang {
+    font-weight: 700;
+    font-size: 15px;
+    img{
+        height: 15px;
+        width: 25px;
+    }
+}
+/* ..............nav-5th and 6th Element............... */
+.nav-1st{
+    font-size: 0.7rem;
+}
+.nav-2nd{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/* ..............nav-7th Element............... */
+.nav-cart{
+    display: flex;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart p{
+    padding-top: 15px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/* ..............nav Panel............... */
+.nav-panel{
+    height: 40px;
+    background-color:#222f3d;
+    display: flex;
+    color:#FFFFFF;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.panel-all{
+    font-weight: 700;
+}
+.panel-options a{
+    display: inline;
+    margin-left: 20px;
+    text-decoration: none;
+    list-style:none;
+    color:#FFFFFF;
+}
+.panel-options{
+    font-size: 0.85rem;
+   width: 80%;
+}
+.panel-deals{
+    font-size: 0.90rem;
+    font-weight: 700;
+}
+/* ................Shop section................... */
+.shop-section{
+    padding-top:250px;
+    padding-bottom:25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    height: auto;
+}
+.box{
+    height: 400px;
+    width: 300px;
+    padding: 20px 0px 15px;
+    background-color: rgb(221, 220, 220);
+    margin-top: 20px;
+}
+.box h2{
+    text-align: center;
+}
+.box-img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 330px;
+    background-size: cover;
+}  
+.box-content a{
+    color: #007185;
+    text-decoration: none;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* ........Personalize section........... */
+.personalize{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rec{
+    padding-top:40px ;
+    color: #000000;
+    font-size: 24px;
+    padding-bottom: 4px;
+    font-weight: 700;
+    text-align: center;
+}
+.personalize button{
+    margin-top: 8px;
+    margin-bottom: 6px;
+    background-color: rgb(255, 216, 20);
+    padding: 8px 85px;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+.a{
+    text-decoration: none;
+    color: #000000;
+}
+.new-signin{
+    font-size: 11px;
+    margin-bottom: 15px;
+    a{
+        color: rgb(35, 35, 230);
+    }   
+}
+/* ..............footer................ */
+/* ...............footer-panel-1............... */
+.footer-panel-1{
+    height: 50px;
+    font-size: 13px;
+    background-color : #37475a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ...............footer-panel-2............... */
+.footer-panel-2{
+    background-color: #222f3d;
+    color: white;
+    list-style: none;
+    height: 320px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-panel-2 ul{
+    list-style: none;
+}
+.footer-panel-2 li{
+    margin-bottom: 10px;
+}
+.footer-panel-2 p{
+    font-size: 16px;
+    margin:50px 0px 14px;
+    font-weight: 700;
+}
+.footer-panel-2 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.footer-panel-2 a:hover{
+    text-decoration: underline;
+}
+/* ...............footer-panel-3............... */
+.footer-panel-3{
+    background-color: #222f3d;
+    border-top: 0.5px solid #ffffff;
+    border-bottom: 0.5px solid #ffffff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+/* ...............footer-panel-4............... */
+.footer-panel-4{
+    background-color: #222f3d;
+    height: 75px;
+    font-weight: 200;
+}
+.policy{
+    text-align: center;
+    padding-top: 10px;
+}
+.policy a{
+    padding: 0px 7.2px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #DDDDDD;
+}
+.policy a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+span{
+    font-size: 12px;
+    color: #DDDDDD;
+}
