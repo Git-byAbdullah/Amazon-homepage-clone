@@ -148,38 +148,52 @@ body{
 .shop-section{
     padding-top:250px;
     padding-bottom:25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
     background-image: url(https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 350px;
-    height: auto;
+    box-sizing: border-box;
 }
 .box{
-    height: 400px;
-    width: 300px;
+    width: 100%;
+    height: auto;
+    min-width: 0;
     padding: 20px 0px 15px;
     background-color: rgb(221, 220, 220);
     margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .box h2{
     text-align: center;
+    font-size: clamp(0.65rem, 1.6vw, 1.3rem);
+    padding: 0 4px;
+    overflow-wrap: break-word;
 }
 .box-img{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 330px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
     background-size: cover;
+    background-position: center;
 }  
 .box-content a{
     color: #007185;
     text-decoration: none;
+    font-size: clamp(0.6rem, 1.3vw, 0.9rem);
 }
 .box-content{
     margin-left: 1rem;
     margin-right: 1rem;
+    text-align: center;
 }
 /* ........Personalize section........... */
 .personalize{
@@ -295,8 +309,145 @@ body{
     text-align: center;
     font-weight: 200;
     padding-bottom: 30px;
+    background-color: #222f3d;
 }
 span{
     font-size: 12px;
     color: #DDDDDD;
+}
+/* ...............media query............... */
+/* @media (width<1050px) {
+    .nav-1st, .nav-2nd{
+        display: none;
+    }
+    .box-img{
+        width: 100%;
+    }
+    .nav-search{
+        width: 500px;
+    }
+}
+@media (width<900px) {
+    .nav-search{
+        width: 400px;
+    }
+}
+@media (width<750px) {
+    .nav-panel{
+        display: none;
+    }
+    
+}
+@media (width<500px) {
+    .nav-lang, .nav-address{
+        display: none;
+    }
+    .shop-section{
+        gap: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .box{
+        padding: 10px 0px 8px;
+        margin-top: 10px;
+    }
+    .box-img{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .box-content{
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+    }
+} */
+@media (width<1050px) {
+    .nav-1st, .nav-2nd{
+        display: none;
+    }
+    .nav-search{
+        width: 500px;
+    }
+}
+@media (width<900px) {
+    .nav-search{
+        width: 400px;
+    }
+    .shop-section{
+        padding-top: 200px;
+    }
+}
+@media (width<750px){
+    .footer-panel-2{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 20px 0;
+        row-gap: 10px;
+    }
+    .footer-panel-2 ul{
+        width: 45%;
+    }
+    .footer-panel-2 p{
+        margin: 10px 0 10px;
+    }
+    .nav-panel{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 0;
+        row-gap: 8px;
+    }
+    .panel-options{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .panel-options a{
+        margin-left: 0;
+    }
+    .shop-section{
+        padding-top: 170px;
+    }
+}
+@media (width<530px){
+  .footer-panel-2 ul{
+        width: 100%;
+    }
+    .nav-search{
+        margin: 0 5px;
+    }
+}
+@media (width<520px) {
+    .shop-section{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (width<500px) {
+    .nav-lang, .nav-address{
+        display: none;
+    }
+    /* .shop-section{
+        padding-top: 130px;
+        background-size: cover;
+    } */
+    .personalize button{
+        padding: 8px 40px;
+    }
+    .nav-panel{
+        display: none;
+    }
+}
+@media (width<400px) {
+    .nav-search{
+        width: 200px;
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media (width<386px) {
+    .shop-section{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
