@@ -316,50 +316,6 @@ span{
     color: #DDDDDD;
 }
 /* ...............media query............... */
-/* @media (width<1050px) {
-    .nav-1st, .nav-2nd{
-        display: none;
-    }
-    .box-img{
-        width: 100%;
-    }
-    .nav-search{
-        width: 500px;
-    }
-}
-@media (width<900px) {
-    .nav-search{
-        width: 400px;
-    }
-}
-@media (width<750px) {
-    .nav-panel{
-        display: none;
-    }
-    
-}
-@media (width<500px) {
-    .nav-lang, .nav-address{
-        display: none;
-    }
-    .shop-section{
-        gap: 8px;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    .box{
-        padding: 10px 0px 8px;
-        margin-top: 10px;
-    }
-    .box-img{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    .box-content{
-        margin-left: 0.4rem;
-        margin-right: 0.4rem;
-    }
-} */
 @media (width<1050px) {
     .nav-1st, .nav-2nd{
         display: none;
